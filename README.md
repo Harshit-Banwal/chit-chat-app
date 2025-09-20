@@ -1,6 +1,6 @@
-# chit-cht - Chat Application
+# chit-chat - Chat Application
 
-chit-cht is chat application build with the power of MERN Stack.
+chit-chat is chat application build with the power of MERN Stack.
 
 ![login page](./images/login.jpg)
 
