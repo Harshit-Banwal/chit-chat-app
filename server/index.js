@@ -36,7 +36,7 @@ app.use('/api/messages', messageRoutes);
 const server = app.listen(port, () => console.log(`Server started on ${port}`));
 const io = socket(server, {
   cors: {
-    origin: 'http://localhost:3000',
+    origin: ['http://localhost:3000', 'https://chit-chat-app-neon.vercel.app'],
     credentials: true,
   },
 });

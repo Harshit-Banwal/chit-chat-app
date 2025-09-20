@@ -1,3 +1,4 @@
+// export const host = 'http://localhost:5000';
 export const host = 'https://chit-chat-api-two.vercel.app';
 export const loginRoute = `${host}/api/auth/login`;
 export const registerRoute = `${host}/api/auth/register`;
