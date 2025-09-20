@@ -25,7 +25,7 @@ mongoose
     console.log(err.message);
   });
 
-app / get('/', (req, res) => res.status(201).send('API UP...'));
+app.get('/', (req, res) => res.status(201).send('API UP...'));
 app.get('/ping', (_req, res) => {
   return res.json({ msg: 'Ping Successful' });
 });
