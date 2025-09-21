@@ -4,12 +4,16 @@ import Robot from '../assets/robot.gif';
 import Logout from './Logout';
 export default function Welcome() {
   const [userName, setUserName] = useState('');
-  useEffect(async () => {
-    setUserName(
-      await JSON.parse(
-        localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY)
-      ).username
-    );
+  useEffect(() => {
+    const fetchData = async () => {
+      setUserName(
+        await JSON.parse(
+          localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY)
+        ).username
+      );
+    };
+
+    fetchData();
   }, []);
   return (
     <Container>
